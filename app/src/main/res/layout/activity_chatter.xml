@@ -1,0 +1,117 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatterActivity">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/header"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Toggle Drawer Button -->
+        <ImageButton
+            android:id="@+id/drawerToggle"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:src="@drawable/burgercap"
+            android:background="@color/transparent" />
+
+        <!-- Logo or Title -->
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/sidetitle"/>
+
+        <!-- Notification Button -->
+        <ImageButton
+            android:id="@+id/notification"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:layout_gravity="end"
+            android:background="@color/transparent"
+            android:src="@drawable/notif"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_chat"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintBottom_toTopOf="@id/edit_text_message_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:listitem="@layout/item_chat_message" />
+
+    <!-- Attach file icon -->
+    <ImageView
+        android:id="@+id/image_view_attach_file"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_attach_file"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/navbar_bottom"
+        android:padding="8dp"/>
+
+    <!-- Choose sticker icon -->
+    <ImageView
+        android:id="@+id/image_view_choose_sticker"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_choose_sticker"
+        app:layout_constraintStart_toEndOf="@id/image_view_attach_file"
+        app:layout_constraintBottom_toTopOf="@id/navbar_bottom"
+        android:padding="8dp"/>
+
+    <!-- Choose GIF icon -->
+    <ImageView
+        android:id="@+id/image_view_choose_gif"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_choose_gif"
+        app:layout_constraintStart_toEndOf="@id/image_view_choose_sticker"
+        app:layout_constraintBottom_toTopOf="@id/navbar_bottom"
+        android:padding="8dp"/>
+
+    <!-- Message input -->
+    <EditText
+        android:id="@+id/edit_text_message_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:hint="Type a message..."
+        app:layout_constraintBottom_toTopOf="@id/navbar_bottom"
+        app:layout_constraintEnd_toStartOf="@id/button_send"
+        app:layout_constraintStart_toEndOf="@id/image_view_choose_gif" />
+
+    <!-- Send button -->
+    <Button
+        android:id="@+id/button_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        app:layout_constraintBottom_toBottomOf="@id/edit_text_message_input"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Bottom Navigation View -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navbar_bottom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:itemIconSize="30dp"
+        app:menu="@menu/nav_bottom"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

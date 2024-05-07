@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Events">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/events_header">
+
+        <ImageButton
+            android:id="@+id/btn_next2"
+            android:layout_width="59dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="19dp"
+            android:layout_marginBottom="15dp"
+            android:background="@null"
+            android:src="@drawable/next"
+            />
+
+        <ImageButton
+            android:id="@+id/btn_bck2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="31dp"
+            android:layout_marginBottom="17dp"
+            android:background="@null"
+            android:contentDescription="Back Button"
+            android:src="@drawable/arrow_back"
+            tools:ignore="HardcodedText,RedundantDescriptionCheck,TouchTargetSizeCheck" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/events_below">
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-12dp"
+        android:src="@drawable/footer"
+        android:contentDescription="Nav Buttons"
+        tools:ignore="HardcodedText,VisualLintBounds" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="137dp"
+        android:layout_marginEnd="23dp"
+        android:background="@drawable/green_background"
+        android:elevation="0dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Craft day is 2-3 hours"
+        android:textColor="#FFFFFF"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="215dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/green_background"
+        android:elevation="0dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:stateListAnimator="@null"
+        android:text="Rest Day"
+        android:textColor="#FFFFFF"
+        tools:ignore="HardcodedText,DuplicateSpeakableTextCheck" />
+
+    <ImageButton
+        android:id="@+id/wep"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="290dp"
+        android:layout_marginEnd="22dp"
+        android:background="@drawable/wp2"
+        android:elevation="0dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:stateListAnimator="@null"
+        android:text="Rest Day"
+        android:textColor="#FFFFFF"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wep"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="187dp"
+        android:text="Sep 20 - 25"
+        android:textColor="#918787"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="146dp"
+        android:layout_marginEnd="62dp"
+        android:layout_toStartOf="@+id/imageButton"
+        android:text="SAT
+        19"
+        android:textColor="#4C4C4C"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="48dp"
+        android:layout_height="51dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="41dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="217dp"
+        android:layout_toStartOf="@+id/button"
+        android:text="SUN
+        20"
+        android:textColor="#4C4C4C"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="455dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/events_header"
+        android:elevation="0dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:stateListAnimator="@null"
+        android:text="Chapter 2"
+        android:textColor="#FFFFFF"
+        tools:ignore="HardcodedText,DuplicateSpeakableTextCheck" />
+
+    <ImageButton
+        android:id="@+id/wep2"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="536dp"
+        android:layout_marginEnd="17dp"
+        android:background="@drawable/wp1"
+        android:elevation="0dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:stateListAnimator="@null"
+        android:text="Rest Day"
+        android:textColor="#FFFFFF"
+        tools:ignore="HardcodedText" />
+
+
+</RelativeLayout>
