@@ -155,7 +155,7 @@
                     <RelativeLayout
                         android:layout_width="100dp"
                         android:layout_height="65dp"
-                        android:background="@drawable/logoedit"
+
                         >
                         <ImageView
                             android:id="@+id/google"
@@ -174,7 +174,7 @@
                     <RelativeLayout
                         android:layout_width="100dp"
                         android:layout_height="65dp"
-                        android:background="@drawable/logoedit"
+
                         >
                         <ImageView
                             android:id="@+id/gmail"
@@ -193,7 +193,7 @@
                     <RelativeLayout
                         android:layout_width="100dp"
                         android:layout_height="65dp"
-                        android:background="@drawable/logoedit"
+
                         >
                         <ImageView
                             android:id="@+id/facebook"
