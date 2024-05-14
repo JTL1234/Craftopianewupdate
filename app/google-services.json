@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "268129295917",
+    "project_id": "craftopia-limpag",
+    "storage_bucket": "craftopia-limpag.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:268129295917:android:3f34ad26639253f708a2a4",
+        "android_client_info": {
+          "package_name": "com.capstone.craftopia"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOeUe9U_saLs9Mr1BvXMlpSjv5Y_C18q0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
